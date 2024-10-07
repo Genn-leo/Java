@@ -4,22 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external JavaScript file for interactive features -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="login-container">
       <h2>Login</h2>
       <form action="/login" method="post">
+        <!-- Username input field -->
         <div class="input-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" required />
         </div>
+        <!-- Password input field with toggle option -->
         <div class="input-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required />
+          <!-- Span element to toggle password visibility -->
+          <span class="toggle-password" onclick="togglePassword()">Show</span>
         </div>
+        <!-- Remember Me checkbox -->
+        <div class="input-group remember-me">
+          <input type="checkbox" id="remember-me" name="remember-me" />
+          <label for="remember-me">Remember Me</label>
+        </div>
+        <!-- Submit button -->
         <button type="submit">Login</button>
+        <!-- Additional options: Forgot Password and Register links -->
+        <div class="additional-options">
+          <a href="/forgot-password">Forgot Password?</a>
+          <a href="/register">Register</a>
+        </div>
       </form>
+      <!-- Social login options -->
+      <div class="social-login">
+        <p>Or login with:</p>
+        <button class="social-btn google">Google</button>
+        <button class="social-btn facebook">Facebook</button>
+      </div>
     </div>
   </body>
 </html>
