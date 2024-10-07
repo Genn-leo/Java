@@ -1,9 +1,59 @@
-/* Basic styling remains the same as above */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Additional styling for new features */
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-/* Style for the toggle password text */
-.input-group .toggle-password {
+/* Login Container */
+.login-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Toggle Password */
+.toggle-password {
   cursor: pointer;
   font-size: 0.9em;
   color: #007BFF;
@@ -13,12 +63,7 @@
   transform: translateY(-50%);
 }
 
-/* Make the input group relative to position the toggle password text */
-.input-group {
-  position: relative;
-}
-
-/* Style for the remember me checkbox and label */
+/* Remember Me */
 .remember-me {
   display: flex;
   align-items: center;
@@ -28,7 +73,24 @@
   margin-left: 5px;
 }
 
-/* Style for additional options links */
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Additional Options */
 .additional-options {
   margin-top: 10px;
   text-align: right;
@@ -44,7 +106,7 @@
   text-decoration: underline;
 }
 
-/* Style for social login section */
+/* Social Login */
 .social-login {
   margin-top: 20px;
 }
@@ -53,7 +115,6 @@
   margin-bottom: 10px;
 }
 
-/* Style for social login buttons */
 .social-btn {
   display: block;
   width: 100%;
@@ -66,7 +127,6 @@
   color: white;
 }
 
-/* Specific styles for Google and Facebook buttons */
 .social-btn.google {
   background-color: #dd4b39;
 }
@@ -75,7 +135,6 @@
   background-color: #3b5998;
 }
 
-/* Hover effects for social buttons */
 .social-btn.google:hover {
   background-color: #c23321;
 }
