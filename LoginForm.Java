@@ -1,1 +1,1 @@
-ASSsS
+public class
